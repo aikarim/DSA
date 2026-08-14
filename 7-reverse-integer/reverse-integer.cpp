@@ -7,7 +7,6 @@ public:
             int digit = x % 10;
             x /= 10;
 
-            // Check overflow before rev = rev * 10 + digit
             if (rev > INT_MAX / 10 || 
                 (rev == INT_MAX / 10 && digit > 7)) {
                 return 0;
